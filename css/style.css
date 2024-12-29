@@ -373,10 +373,24 @@ body {
     width: 100vw;
     height: 100vh;
     }
-    .contentportofolio {
+    .profile-wrapper {
+      width: 150px;
+      height: 150px;
+    }
+    .profile-wrapper img{
+      position: relative;
+      top: -35%;
+    }
+  .contentportofolio {
       position: relative;
       left : 3%;
+      bottom :25%;
     }
+
+  .hero-section  {
+    position: relative;
+    margin-bottom: -100px;
+  }
   .hero-section h1 {
     font-size: 1.3rem;
   }
@@ -386,16 +400,11 @@ body {
   .hero-section p {
     font-size: 0.8rem;
   }
-  .profile-wrapper {
-    width: 150px;
-    height: 150px;
-  }
-  .profile-wrapper img{
-    position: relative;
-    top: -12%;
-  }
+ 
   .skills .icon {
     font-size: 1rem;
+
+
   }
   .portfolio-item {
     margin: 0 0;
