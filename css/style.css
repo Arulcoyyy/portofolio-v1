@@ -38,6 +38,9 @@ body {
 .navbar-brand {
   font-family: var(--Font-default-1);
 }
+.navbar .navbar-toggler .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
 
 /* Media Query Headphone */
 @media (max-width: 575px) {
@@ -74,6 +77,7 @@ body {
        color: var(--Color-default-7);
        border-left: 3px solid var(--Color-default-1);
   }
+  
 }
 
 
@@ -300,6 +304,10 @@ body {
 
 /* Box-List End */
 
+.text-item, .portfolio-item {
+  opacity: 0;
+  transform: translateY(100px);
+}
 
 /* Portfolio Section */
 .portfolio {
@@ -320,6 +328,46 @@ body {
 .fw-bold {
   font-family: var(--Font-default-1);
 }
+/* Media query untuk lebar maksimum 768px */
+@media (max-width: 768px) {
+  .portfolio .row {
+      justify-content: center;
+  }
+
+  .portfolio .portfolio-item {
+      max-width: 100%;
+      width: 25%;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  .portfolio h2 {
+      text-align: center;
+      font-size: 1.8rem;
+  }
+}
+
+/* Media query untuk lebar maksimum 575px */
+@media (max-width: 575px) {
+  .portfolio .row {
+      justify-content: center;
+  }
+
+  .portfolio .portfolio-item {
+      max-width: 100%;
+      width: 50%;
+      margin-bottom: 15px;
+  }
+
+  .portfolio h2 {
+      font-size: 1.5rem;
+  }
+
+  .portfolio .card {
+      width: 100%;
+  }
+}
+
 /* Warna teks di dalam input */
 #name, #email, #message {
   background-color: #2d2d2d;
@@ -362,7 +410,7 @@ body {
     padding: 40px 15px;
   }
   .portfolio-item {
-    flex: 0 0 100%; /* Setiap card mengambil lebar penuh */
+    flex: 0 0 100%; 
     max-width: 100%;
   }
 }

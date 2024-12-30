@@ -93,3 +93,37 @@ const showAnim = gsap.from('.navbar', {
   });
 
   TweenLite.to("#whoim", 5, {delay:1.5, scrambleText:{text:"I'M WEB DEVELOPMENT", rightToLeft:true, chars:"lowercase"}})
+
+
+   // Registrasikan plugin ScrollTrigger
+   gsap.registerPlugin(ScrollTrigger);
+
+   // Animasi untuk elemen di dalam .text-item
+   gsap.utils.toArray('.text-item').forEach((item) => {
+       gsap.to(item, {
+           y: 0, // Kembali ke posisi normal
+           opacity: 1, // Munculkan elemen
+           duration: 1.5,
+           ease: "power3.out",
+           scrollTrigger: {
+               trigger: item,
+               start: "top 80%", // Mulai animasi saat elemen 80% masuk viewport
+               toggleActions: "play reverse play reverse", // Animasi dapat diulang
+           }
+       });
+   });
+
+   // Animasi untuk elemen di dalam .portfolio-item
+   gsap.utils.toArray('.portfolio-item').forEach((item) => {
+       gsap.to(item, {
+           y: 0, // Kembali ke posisi normal
+           opacity: 1, // Munculkan elemen
+           duration: 1.5,
+           ease: "power3.out",
+           scrollTrigger: {
+               trigger: item,
+               start: "top 85%", // Mulai animasi saat elemen 85% masuk viewport
+               toggleActions: "play reverse play reverse", // Animasi dapat diulang
+           }
+       });
+   });
