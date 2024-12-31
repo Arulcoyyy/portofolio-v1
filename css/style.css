@@ -306,6 +306,10 @@ body {
        padding-top: 3rem;
        padding-bottom: 2rem;
   }
+  .box-list .container .text-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 /* Media Query Tablet And Headphone */
@@ -316,6 +320,10 @@ body {
   .box-list {
        padding-top: 3rem;
        padding-bottom: 2rem;
+  }
+  .box-list .container .text-item:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 
@@ -379,7 +387,7 @@ body {
 
   .portfolio .portfolio-item {
       max-width: 100%;
-      width: 50%;
+      width: 75%;
       margin-bottom: 15px;
       text-align: center;
   }
