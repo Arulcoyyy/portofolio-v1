@@ -103,8 +103,8 @@ body {
 
 /* Circular Profile Image */
 .profile-wrapper img {
-    width: 125%;
-    height: 135%;
+    width: 140%;
+    height: 140%;
     object-fit: cover;
     border-radius: 40%;
     position: relative;
@@ -116,21 +116,8 @@ body {
 
 .profile-wrapper img:hover {
   transform: scale(1.025);
-  box-shadow: 0 0 15px 1.3px rgba(0, 123, 255, 0.8);
+  box-shadow: 0 5px 15px rgb(98, 247, 247);
   
-}
-
-
-/* SVG Background */
-.profile-bg {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-45%, -50%);
-    width: 350px;
-    height: 200px;
-    z-index: 1;
-    opacity: 0.8;
 }
 
 
@@ -198,6 +185,32 @@ body {
       bottom: 10%;
   }
 }
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+  .hero-section h1 {
+      font-size: 2rem;
+  }
+
+  .hero-section .contentportofolio p {
+      font-size: 0.9rem;
+      width: 80%;
+  }
+  .profile-wrapper {
+    margin-bottom:15px;
+  }
+  .profile-wrapper img{
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 40%;
+    position: relative;
+    z-index: 2;
+    right: 6%;
+    margin-top: 25px;
+  }
+}
 
 .hero-sectionabout {
   color: white;
@@ -237,8 +250,12 @@ body {
   font-size: 32px;
   line-height: 0px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
-
+.box-list .container .text-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 9px rgb(98, 247, 247);
+}
 .icons-one {
   color: var(--Color-default-8);
 }
@@ -324,6 +341,10 @@ body {
 .portfolio-item {
   text-align: center;
 }
+.portfolio .row .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgb(98, 247, 247);
+}
 
 .fw-bold {
   font-family: var(--Font-default-1);
@@ -351,12 +372,16 @@ body {
 @media (max-width: 575px) {
   .portfolio .row {
       justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   .portfolio .portfolio-item {
       max-width: 100%;
       width: 50%;
       margin-bottom: 15px;
+      text-align: center;
   }
 
   .portfolio h2 {
@@ -448,7 +473,7 @@ body {
   .hero-section p {
     font-size: 0.8rem;
   }
- 
+
   .skills .icon {
     font-size: 1rem;
 
