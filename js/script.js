@@ -1,3 +1,4 @@
+
 const fixedText = "Hi, I'm "; // Bagian teks statis
 const nameText = "Manarul Hidayat"; // Bagian teks yang akan di-random
 const randomChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"; // Karakter acak
@@ -93,5 +94,4 @@ const showAnim = gsap.from('.navbar', {
   });
 
   TweenLite.to("#whoim", 5, {delay:1.5, scrambleText:{text:"I'M WEB DEVELOPMENT", rightToLeft:true, chars:"lowercase"}})
-
 
