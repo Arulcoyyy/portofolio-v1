@@ -221,14 +221,16 @@
         <div class="container" >
             <h2 class="mb-4">My Projects</h2>
             <div class="row justify-content-center projectsme">
-                <div class="col-md-6 col-lg-4 col-xs-12 portfolio-item" data-aos="fade-up"  data-aos-duration="1500" data-aos-anchor-placement="top-bottom" style="text-align: justify">
-                    <div class="card" style="width: 18rem; background: rgba(0, 0, 0, 0.6); color: white;  ">
+              <div class="col-md-6 col-lg-4 col-xs-12 portfolio-item" data-aos="fade-up"  data-aos-duration="1500" data-aos-anchor-placement="top-bottom" style="text-align: justify">
+                  <a href="https://diabtsweb.vercel.app" target="_blank"       style="text-decoration: none;">
+                    <div class="card" style="width: 18rem; background: rgba(0, 0, 0, 0.6); color: white;">
                         <img src="img/diabtsapp.png" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title text-center">Diabtsweb</h5>
                           <p class="card-text"> Diabtsweb merupakan web  pemantauan kadar gula diabetes dan penyedia layanan edukasi mengenai diabetes.</p>
                         </div>
                       </div>
+                    </a>
                   </div>
                 <div class="col-md-6 col-lg-4 col-xs-12 portfolio-item" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-bottom" style="text-align: justify">
                     <div class="card" style="width: 18rem; background: rgba(0, 0, 0, 0.6);color: white;">
@@ -316,6 +318,12 @@
 
     <!-- INI BAGIAN FOOTER -->
  <footer class=" text-center" style="background-color: rgba(0, 0, 0, 0.6);">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; ">
+        © 2024 Copyright by
+        <a class="  text-decoration-none" style="color: white;" href="# ">Arulcoyyy</a>
+      </div>
+      <!-- Copyright -->
       <!-- Grid container -->
       <div class="container pt-4 pb-2">
         <!-- Section: Social media -->
@@ -382,13 +390,6 @@
         <!-- Section: Social media -->
       </div>
       <!-- Grid container -->
-    
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.6); color: white; ">
-        © 2024 Copyright by
-        <a class="  text-decoration-none" style="color: white;" href="# ">Arulcoyy</a>
-      </div>
-      <!-- Copyright -->
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -438,7 +439,7 @@
 
     var typewriter = new Typewriter(app, {
     loop: true,
-    delay: 350,
+    delay: 'natural',
     });
 
     typewriter
