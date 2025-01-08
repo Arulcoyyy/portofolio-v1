@@ -491,3 +491,66 @@ body {
     margin: 0 0;
   }
 }
+
+
+
+
+/* INI BAGIAN STYLE PROJECT / PORTOFOLIO PROJECT*/
+.heroproject h1 {
+  font-family: var(--Font-default-1);
+}
+.heroproject img{
+  width: 380px;
+  height: 225px;
+  box-shadow: 0 5px 15px rgba(0, 213, 255, 0.822);
+}
+.btn-custom {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #574bff;
+}
+
+.heroproject {
+  padding: 2.75rem 0;
+}
+
+.heroproject .row p{
+text-align: justify;
+font-size: 18px;
+text-indent: 3em;
+}
+
+.features {
+  background-color: rgba(0, 0, 0, 0.9);;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+.features h3 {
+font-family: var(--Font-default-1);
+}
+.features h5 {
+font-family: var(--Font-default-1);
+}
+.features li{
+text-align: justify;
+}
+
+@media (max-width: 400px) {
+  .heroproject img {
+    width: 300px;
+    height: 175px;
+    box-shadow: none;
+  }
+}
+@media (max-width: 300px) {
+  .heroproject img {
+    width: 200px;
+    height: 135px;
+    box-shadow: none;
+  }
+}
