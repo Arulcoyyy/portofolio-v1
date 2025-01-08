@@ -540,6 +540,20 @@ font-family: var(--Font-default-1);
 text-align: justify;
 }
 
+@media (max-width: 992px) {
+  .col-md-5 {
+    width: 100%;
+    justify-content: center;
+  }
+  .col-md-7 {
+    width: 100%;
+    justify-content: center;
+  }
+  .col-md-4 {
+    width: 100%;
+    justify-content: center;
+  }
+}
 @media (max-width: 400px) {
   .heroproject img {
     width: 300px;
